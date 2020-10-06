@@ -1,13 +1,12 @@
 import React from 'react';
 import GlobalStyles from './GlobalStyles';
+import Routes from './routes.js';
 
-const App = () => {
-    return (
-        <>
-            <h1>Hello World</h1>
-            <GlobalStyles/>
-        </>
-    )
-};
+const App = () => (
+    <>
+        <Routes/>
+        <GlobalStyles/>
+    </>
+);
 
 export default App;
