@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const api = axios.get('http://localhost:5000/promotions?_embed=comments')
+const api = params => axios.get('http://localhost:5000/promotions?_embed=comments', params);
 
 export default api;
