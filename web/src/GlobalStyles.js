@@ -5,6 +5,7 @@ export default createGlobalStyle`
         --whiteIce: #F5F5F5;
         --pink: #FF3375;
         --gray: #999;
+        --darkBlue: #32549e;
     }
     * {
         margin: 0;
@@ -18,5 +19,25 @@ export default createGlobalStyle`
     }
     ul {
         list-style: none;
+    }
+    h1.logo {
+        color: var(--pink);
+        font-size: 50px;
+
+        @media(max-width: 500px){
+            font-size: 40px;
+        }
+    }
+    h6 {
+        @media(max-width: 500px){
+            display: none;
+        }
+    }
+    button.send {
+        background: var(--darkBlue);
+    }
+    a.back {
+        background: #E0E7ED;
+        border: 1px solid #ccd5dd;
     }
 `

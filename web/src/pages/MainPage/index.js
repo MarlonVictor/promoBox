@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import api from '../../services/api';
+import { getPromotions } from '../../services/api';
 
 import PromotionCard from '../../components/PromotionCard';
 import SearchField from '../../components/SearchField';
@@ -14,7 +14,7 @@ const MainPage = () => {
             params.title_like = search
         }
 
-        api({params}).then(res => setPromotions(res.data))
+        getPromotions({params}).then(res => setPromotions(res.data))
     }, [search])
 
 
