@@ -3,6 +3,7 @@ import { useParams, useHistory, Link } from 'react-router-dom';
 
 import { postPromotion } from '../../services/api';
 import FormInput from '../../components/FormInput';
+import Footer from '../../components/Footer';
 
 
 const initialValue = { //Iniciando o objeto com valores vazios
@@ -29,7 +30,7 @@ const FormPage = () => {
 
 
     return (
-        <div className="bg-white min-vh-100 py-3 pb-0 shadow position-relative">
+        <div className="bg-white min-vh-100 py-3 pb-0 shadow position-relative m-auto">
             <div className="container-fluid w-75 pb-3 m-auto">
                 <h1 className="text-center py-3 logo">PromoBox</h1>
                 <h6 className="py-2">Nova Promoção:</h6>
@@ -51,6 +52,7 @@ const FormPage = () => {
                     </div>
                 </form>
             </div>
+            <Footer/>
         </div>  
     )
 };

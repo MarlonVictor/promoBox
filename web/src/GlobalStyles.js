@@ -14,7 +14,6 @@ export default createGlobalStyle`
     }
     html {
         min-height: 100%;
-        max-width: 850px;
         margin: 0 auto;
     }
     ul {
@@ -26,6 +25,15 @@ export default createGlobalStyle`
 
         @media(max-width: 500px){
             font-size: 40px;
+        }
+
+        &.home {
+            font-size: 35px;
+
+            @media(max-width: 500px){
+                font-size: 20px;
+                transform: translateY(10px);
+            }
         }
     }
     h6 {
@@ -39,5 +47,8 @@ export default createGlobalStyle`
     a.back {
         background: #E0E7ED;
         border: 1px solid #ccd5dd;
+    }
+    div.bg-white {
+        max-width: 850px;
     }
 `

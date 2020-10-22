@@ -3,6 +3,9 @@ import { getPromotions } from '../../services/api';
 
 import PromotionCard from '../../components/PromotionCard';
 import SearchField from '../../components/SearchField';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
 
 const MainPage = () => {
     const [promotions, setPromotions] = useState([])
@@ -20,11 +23,15 @@ const MainPage = () => {
 
     return (
         <>
+            <Header />
             <SearchField search={search} setSearch={setSearch} />
             
             {promotions.map((promotion, key) => (
                 <PromotionCard promotion={promotion} key={key} />
             ))}
+
+            <br/>
+            <Footer />
         </>
     )
 };
