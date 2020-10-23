@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="bg-white mb-3">
             <Top className="d-flex align-middle justify-content-center">
-                <h1 className="logo home">PromoShow</h1>
+                <h1 className="logo home">PromoBox</h1>
                 <HeaderIcon 
                     icon={share}
                     link="https://github.com/MarlonVictor/promoBox"

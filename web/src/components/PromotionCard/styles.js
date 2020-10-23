@@ -25,10 +25,18 @@ export const Container = styled.div`
     }
     .btn {
         font-size: 14px;
+        max-height: 33px;
 
+        b {
+            font-size: 20px;
+        }
         &:hover {
             background-color: #FFF;
             color: #17A2B8;
+
+            &.px-1.ml-1.border-0 {
+                color: #FF3375;
+            }
         }
     }
 
@@ -45,7 +53,7 @@ export const Container = styled.div`
             font-size: 18px;
         }
     }
-    @media(max-width: 400px) {
+    @media(max-width: 430px) {
         img {
             max-width: 90px;
             max-height: 90px;
@@ -56,6 +64,10 @@ export const Container = styled.div`
         }
         h4, h5 {
             font-size: 16px;
+        }
+        footer {
+            transform: translateX(-30px);
+            width: 210px;
         }
         .btn {
             font-size: 12px;

@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { Container } from './styles';
+
 
 const PromotionCard = ({ promotion }) => {
     return (
@@ -24,6 +27,10 @@ const PromotionCard = ({ promotion }) => {
                     <a href={promotion.url} target="_blank" className="btn btn-outline-info btn-sm">{/* Link da promoção */}
                         Ir Para o Site
                     </a>
+
+                    <Link to={`/edit/${promotion.id}`} title="Editar" className="btn btn-outline-info btn-sm px-1 ml-1 border-0">{/* Editar promoção */}
+                        <b>°°°</b>
+                    </Link>
                 </footer>
             </main>
         </Container>

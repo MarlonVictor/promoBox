@@ -43,10 +43,20 @@ export default createGlobalStyle`
     }
     button.send {
         background: var(--darkBlue);
+        transition: .3s;
+
+        &:hover {
+            filter: brightness(90%);
+        }
     }
     a.back {
         background: #E0E7ED;
         border: 1px solid #ccd5dd;
+        transition: .3s;
+
+        &:hover {
+            filter: brightness(90%);
+        }
     }
     div.bg-white {
         max-width: 850px;

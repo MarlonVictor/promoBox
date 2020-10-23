@@ -14,8 +14,8 @@ const SearchField = ({ search, setSearch }) => {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}/* Atualiza o valor de seach a cada mudança */
                 />
-                <button 
-                    type="submit"
+                <button
+                    disabled
                     className="bg-transparent flex-shrink-1 border-0"
                 > {/* Icon da perquisa */}
                     <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
