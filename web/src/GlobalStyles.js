@@ -15,6 +15,7 @@ export default createGlobalStyle`
     html {
         min-height: 100%;
         margin: 0 auto;
+        position: relative;
     }
     ul {
         list-style: none;
@@ -58,7 +59,7 @@ export default createGlobalStyle`
             filter: brightness(90%);
         }
     }
-    div.bg-white {
+    div.bg-white, .alert {
         max-width: 850px;
     }
 `

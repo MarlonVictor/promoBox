@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.footer`
     background: #FFF;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(60px);
     
     a {
         padding: 5px;
