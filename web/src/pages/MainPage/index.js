@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import PromotionCard from '../../components/PromotionCard';
 import SkeletonPromotionCard from '../../components/PromotionCard/Skeleton';
@@ -22,6 +22,7 @@ const MainPage = () => {
             _sort: 'id',
             title_like: search || undefined
         },
+        debounceDelay: 300,
         onCompleted: res => {
             setPromotions(res.data)
         }
@@ -37,6 +38,7 @@ const MainPage = () => {
                 <Header />
                 <SearchField search={search} setSearch={setSearch} />
 
+                <SkeletonPromotionCard />
                 <SkeletonPromotionCard />
                 <SkeletonPromotionCard />
 
