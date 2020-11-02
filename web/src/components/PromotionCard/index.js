@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container } from './styles';
 
 
-const PromotionCard = ({ promotion }) => {
+const PromotionCard = ({ promotion, onClickComments }) => {
     return (
         <Container className="d-flex bg-white p-2 mt-3 rounded">
             <img src={promotion.imageUrl} alt={promotion.title}/>{/* Imagem da promoção */}
@@ -19,10 +19,10 @@ const PromotionCard = ({ promotion }) => {
                 </header>
 
                 <footer className="position-absolute fixed-bottom">{/* Botões da promoção */}
-                    <div type="button" className="btn btn-outline-info btn-sm border-0">{/* Indicar o número de comentários */}
+                    <button type="button" className="btn btn-outline-info btn-sm border-0" onClick={onClickComments}>{/* Indicar o número de comentários */}
                         {promotion.comments.length}{' '}
                         {promotion.comments.length > 1 ? 'Comentários' : 'Comentário'}
-                    </div>
+                    </button>
 
                     <a href={promotion.url} target="_blank" className="btn btn-outline-info btn-sm">{/* Link da promoção */}
                         Ir Para o Site

@@ -5,6 +5,7 @@ import SkeletonPromotionCard from '../../components/PromotionCard/Skeleton';
 import SearchField from '../../components/SearchField';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Modal from '../../components/Modal';
 
 import useApi from '../../hooks/useApi';
 
@@ -12,6 +13,7 @@ import useApi from '../../hooks/useApi';
 const MainPage = () => {
     const [promotions, setPromotions] = useState([])
     const [search, setSearch] = useState('')
+    const [promotionId, setPromotionId] = useState(null)
 
     const [load, loadInfo] = useApi({
         url: '/promotions',
@@ -32,7 +34,7 @@ const MainPage = () => {
         load()
     }, [search])
 
-    if(loadInfo.loading && search.length === 0) {
+    if(loadInfo.loading && search.length === 0 || promotionId !== null) {
         return (
             <>
                 <Header />
@@ -41,6 +43,10 @@ const MainPage = () => {
                 <SkeletonPromotionCard />
                 <SkeletonPromotionCard />
                 <SkeletonPromotionCard />
+
+                <Modal isOpen={Boolean(promotionId)} onClickClose={() => setPromotionId(null)}>
+                    <h1>comments</h1>
+                </Modal>
 
                 <br/>
                 <Footer />
@@ -67,7 +73,11 @@ const MainPage = () => {
                     )
                     : (
                         promotions.map((promotion, key) => (
-                            <PromotionCard promotion={promotion} key={key} />
+                            <PromotionCard 
+                                promotion={promotion} 
+                                key={key} 
+                                onClickComments={() => setPromotionId(promotion.id)}
+                            />
                         ))
                     )
                 }
