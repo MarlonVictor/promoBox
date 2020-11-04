@@ -44,9 +44,13 @@ const MainPage = () => {
                 <SkeletonPromotionCard />
                 <SkeletonPromotionCard />
 
-                <Modal isOpen={Boolean(promotionId)} onClickClose={() => setPromotionId(null)}>
-                    <h1>comments</h1>
-                </Modal>
+                {promotionId && (
+                    <Modal 
+                        isOpen={Boolean(promotionId)} 
+                        promotionId={promotionId}
+                        onClickClose={() => setPromotionId(null)}
+                    />
+                )}
 
                 <br/>
                 <Footer />

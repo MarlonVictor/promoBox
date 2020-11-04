@@ -15,10 +15,11 @@ export const Container = styled.main`
 
     width: 94%;
     max-width: 850px;
-    min-height: 300px;
+    min-height: 100px;
     margin: 60px auto 0 auto;
+    padding: 20px;
 
-    background: #F8F8F8;
+    background: #F5F5F5;
     border-radius: 5px;
 
     @media(max-width: 630px) {
@@ -32,7 +33,7 @@ export const Container = styled.main`
 export const CloseBtn = styled.button`
     position: absolute;
     right: 0;
-    transform: translateX(20px) translateY(-20px);
+    transform: translateX(20px) translateY(-40px);
 
     width: 40px;
     height: 40px;
@@ -42,4 +43,14 @@ export const CloseBtn = styled.button`
 
     border-radius: 50%;
     border: none;
+`
+
+export const Form = styled.form`
+    max-height: 570px;
+    margin-right: 5px;
+
+    border: 2px solid #DDD;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 `
