@@ -67,7 +67,7 @@ export const Container = styled.div`
         }
         footer {
             transform: translateX(-30px);
-            width: 210px;
+            width: 215px;
         }
         .btn {
             font-size: 12px;

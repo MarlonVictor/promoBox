@@ -7,13 +7,22 @@ export const Container = styled.div`
     img {
         width: 35px;
         height: 35px;
+
+        @media(max-width: 425px) {
+            width: 30px;
+            height: 30px;
+        }
     }
     b {
         color: #555;
         font-size: 16px;
         
         transform: translate(10px, 5px);
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+
+        @media(max-width: 425px) {
+            font-size: 16px;
+        }
     }
     textarea {
         width: 95%;
@@ -24,7 +33,8 @@ export const Container = styled.div`
         outline: none;
 
         @media(max-width: 425px) {
-            width: 100%
+            width: 100%;
+            height: 60px;
         }
     }
     button.btn {

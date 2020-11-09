@@ -53,4 +53,10 @@ export const Form = styled.form`
 
     overflow-y: auto;
     overflow-x: hidden;
+
+    font-size: 30px;
+
+    hr {
+        margin-bottom: 0;
+    }
 `

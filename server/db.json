@@ -27,7 +27,7 @@
       "id": 1,
       "comment": "TELA HD",
       "promotionId": 3,
-      "userId": 1
+      "userId": 3
     },
     {
       "id": 2,
@@ -39,17 +39,29 @@
       "id": 3,
       "comment": "Roda Minecraft?",
       "promotionId": 2,
-      "userId": 1
+      "userId": 3
+    },
+    {
+      "userId": 1,
+      "promotionId": 3,
+      "comment": "Espera a Black Friday que vai cair para 3000",
+      "parentId": 2,
+      "id": 4
     }
   ],
   "users": [
     {
       "id": 1,
+      "name": "Visitante",
+      "avatarUrl": "https://gatry.com/img/user_foto.png"
+    },
+    {
+      "id": 2,
       "name": "Phillip Jacobs",
       "avatarUrl": "https://randomuser.me/api/portraits/men/64.jpg"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Todd Mitchell",
       "avatarUrl": "https://randomuser.me/api/portraits/men/16.jpg"
     }

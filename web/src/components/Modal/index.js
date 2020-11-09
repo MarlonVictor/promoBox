@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 
 import useApi from '../../hooks/useApi';
 import CommentsTree from './CommentsTree';
-import TopContent from './TopContent';
+import CommentBox from './CommentBox';
 
 import { Overlay, Container, CloseBtn, Form } from './styles';
 
@@ -40,11 +40,23 @@ const Modal = ({ isOpen, onClickClose, promotionId }) => {
                 }
             })
             setComment('')
-            load()
+            load({ quietly: true })
 
         } catch (error) {
             console.log(error)
         }
+    }
+
+    async function sendAnswer(txt, parentId) {
+        await sendComment({
+            data: {
+                userId: 1,
+                promotionId,
+                comment: txt,
+                parentId
+            }
+        })
+        load({ quietly: true })
     }
 
     if (!isOpen) {
@@ -61,14 +73,15 @@ const Modal = ({ isOpen, onClickClose, promotionId }) => {
                 </CloseBtn>
 
                 <Form onSubmit={onSubmit}>
-                    <TopContent 
+                    <CommentBox 
+                        isMain={true}
                         setComment={setComment}
                         comment={comment}
                         sendCommentInfo={sendCommentInfo}
                     />
                 
                     <hr />
-                    <CommentsTree comments={loadInfo.data} />
+                    <CommentsTree comments={loadInfo.data} sendComment={sendAnswer}/>
                 </Form>
 
             </Container>
