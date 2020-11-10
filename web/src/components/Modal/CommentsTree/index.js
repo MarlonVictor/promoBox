@@ -94,7 +94,7 @@ const CommentsTree = ({ comments, sendComment }) => {
 
 
     if (!comments) {
-        return <p>Carregando comentários...</p>
+        return <p className="loading">Carregando comentários...</p>
     }
 
     return renderList(tree)

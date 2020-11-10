@@ -3,6 +3,7 @@ import { useParams, useHistory, Link } from 'react-router-dom';
 
 import FormInput from '../../components/FormInput';
 import Footer from '../../components/Footer';
+import SkeletonForm from '../../components/SkeletonForm';
 
 import useApi from '../../hooks/useApi';
 
@@ -64,7 +65,7 @@ const FormPage = () => {
                 </h6>
 
                 {!values ? (
-                    <div>Loading...</div>
+                    <SkeletonForm />
 
                 ) : (
                     <>

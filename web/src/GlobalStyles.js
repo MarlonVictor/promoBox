@@ -62,4 +62,9 @@ export default createGlobalStyle`
     div.bg-white, .alert {
         max-width: 850px;
     }
+    .loading {
+        font-size: 16px;
+        padding: 15px;
+        margin: 0;
+    }
 `
