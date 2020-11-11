@@ -17,6 +17,7 @@ export const Container = styled.div`
     h4 {
         color: #444;
         font-weight: 400;
+        padding-right: 25px;
     }
     h5 {
         font-weight: 400;
@@ -73,5 +74,24 @@ export const Container = styled.div`
             font-size: 12px;
             padding: 5px;
         }
+    }
+`
+
+export const TrashButton = styled.button`
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    color: #999;
+    border: unset;
+    background: unset;
+
+    z-index: 99;
+
+    @media(max-width: 600px) {
+        top: 5px;
+        right: 10px;
+
+        font-size: 16px;
     }
 `

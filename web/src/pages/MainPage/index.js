@@ -15,6 +15,10 @@ const MainPage = () => {
     const [search, setSearch] = useState('')
     const [promotionId, setPromotionId] = useState(null)
 
+    const [delPromotion] = useApi({
+        method: 'DELETE',
+    })
+
     const [load, loadInfo] = useApi({
         url: '/promotions',
         method: 'get',
@@ -81,6 +85,13 @@ const MainPage = () => {
                                 promotion={promotion} 
                                 key={key} 
                                 onClickComments={() => setPromotionId(promotion.id)}
+                                onClickDelete={async () => {
+                                    await delPromotion({
+                                        url: `promotions/${promotion.id}`
+                                    })
+
+                                    load()
+                                }}
                             />
                         ))
                     )

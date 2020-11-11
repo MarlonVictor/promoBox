@@ -70,7 +70,13 @@ const FormPage = () => {
                 ) : (
                     <>
                         {saveInfo.loading 
-                            ? (<span className="text-center text-secondary">Salvando...</span>) 
+                            ? (
+                                <main className="d-flex justify-content-center mt-5 pt-5">
+                                    <div className="spinner-border text-secondary text-center" role="status">
+                                        <span className="sr-only">Loading...</span>
+                                    </div>
+                                </main>
+                            ) 
                             : (
                                 <form onSubmit={onSubmit}>
                                     <FormInput id="title" type="text" label="Título" func={onChange} value={id ? values.title : null}/>
