@@ -7,7 +7,7 @@ import { Container, TrashButton } from './styles';
 const PromotionCard = ({ promotion, onClickComments, onClickDelete }) => {
     return (
         <Container className="d-flex bg-white p-2 mt-3 rounded position-relative">
-            <TrashButton type="button" onClick={onClickDelete}>
+            <TrashButton type="button" onClick={onClickDelete} data-toggle="tooltip" title="Deletar promoção">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
                 </svg>
@@ -30,7 +30,12 @@ const PromotionCard = ({ promotion, onClickComments, onClickDelete }) => {
                         {promotion.comments.length > 1 ? 'Comentários' : 'Comentário'}
                     </button>
 
-                    <a href={promotion.url} target="_blank" className="btn btn-outline-info btn-sm">{/* Link da promoção */}
+                    <a 
+                        href={promotion.url}
+                        target="_blank"
+                        rel = "noopener noreferrer"
+                        className="btn btn-outline-info btn-sm"
+                    >{/* Link da promoção */}
                         Ir Para o Site
                     </a>
 

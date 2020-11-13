@@ -36,9 +36,10 @@ const MainPage = () => {
 
     useEffect(() => {
         load()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search])
 
-    if(loadInfo.loading && search.length === 0 || promotionId !== null) {
+    if(loadInfo.loading || promotionId !== null) {
         return (
             <>
                 <Header />
@@ -52,7 +53,10 @@ const MainPage = () => {
                     <Modal 
                         isOpen={Boolean(promotionId)} 
                         promotionId={promotionId}
-                        onClickClose={() => setPromotionId(null)}
+                        onClickClose={() => {
+                            setPromotionId(null)
+                            load()
+                        }}
                     />
                 )}
 

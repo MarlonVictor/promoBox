@@ -9,6 +9,9 @@ export const Container = styled.div`
         max-width: 200px;
         max-height: 200px;
         margin: 0 30px 0 10px;
+
+        border-radius: 5px;
+        object-fit: cover;
     }
     h1, h5 {
         color: var(--gray);

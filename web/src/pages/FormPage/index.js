@@ -52,6 +52,7 @@ const FormPage = () => {
         if(id) {
             load()
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])
 
 
@@ -79,10 +80,25 @@ const FormPage = () => {
                             ) 
                             : (
                                 <form onSubmit={onSubmit}>
-                                    <FormInput id="title" type="text" label="Título" func={onChange} value={id ? values.title : null}/>
-                                    <FormInput id="url" type="text" label="Link" func={onChange} value={id ? values.url : null}/>
-                                    <FormInput id="imageUrl" type="text" label="Imagem (URL)" func={onChange} value={id ? values.imageUrl : null}/>
-                                    <FormInput id="price" type="text" label="Preço" func={onChange} value={id ? values.price : null}/>
+                                    {id 
+                                        ? (
+                                            <>
+                                                <FormInput id="title"    type="text" label="Título"       func={onChange} value={values.title} />
+                                                <FormInput id="url"      type="text" label="Link"         func={onChange} value={values.url} />
+                                                <FormInput id="imageUrl" type="text" label="Imagem (URL)" func={onChange} value={values.imageUrl} />
+                                                <FormInput id="price"    type="text" label="Preço"        func={onChange} value={values.price} />
+                                            </>
+
+                                        ) 
+                                        : (
+                                            <>
+                                                <FormInput id="title"    type="text" label="Título"       func={onChange} />
+                                                <FormInput id="url"      type="text" label="Link"         func={onChange} />
+                                                <FormInput id="imageUrl" type="text" label="Imagem (URL)" func={onChange} />
+                                                <FormInput id="price"    type="text" label="Preço"        func={onChange} />
+                                            </>
+                                        )
+                                    }
 
                                     <div className="d-flex mt-5">
                                         <Link to="/" className="btn w-25 mr-1 back">{/* Voltar para MainPage */}

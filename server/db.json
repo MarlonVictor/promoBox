@@ -4,22 +4,43 @@
       "title": "Teclado + Mouse Sem Fio USB Bright",
       "url": "https://amzn.to/2GUVS3l",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/dde4d4a73d1ef7acbc9751e3b18b88b8.png",
-      "price": "77,24",
+      "price": "112,18",
       "id": 1
     },
     {
       "title": "Placa de Vídeo EVGA NVIDIA GeForce GTX 1650 Super SC Ultra, 4GB, GDDR6",
       "url": "https://tidd.ly/30IW3WQ",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem_url/bb20bd2508e134595b0a91cd9adb852f.jpg",
-      "price": "1200,79",
+      "price": "1.588,12",
       "id": 2
     },
     {
       "title": "Notebook Lenovo AMD Ryzen 5-3500U 12GB 1TB",
-      "url": "https://tidd.ly/2Gd4LoX",
+      "url": "https://www.americanas.com.br/produto/1608469552?epar=b2wafiliados&franq=AFL-03-41440&opn=YYNKZU&awc=17896_1605103640_f21ae360d1ca7b2c87217e1c29819d7f&voltagem=BIVOLT",
       "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/92ab81f4857f4f666d927528dcb6fbc8.png",
-      "price": "3.179,00",
+      "price": "3.099,99",
       "id": 3
+    },
+    {
+      "title": "Tênis Nike Air Max 2090 Masculino",
+      "url": "https://www.nike.com.br/Produto/Tnis-Nike-Air-Max-2090-Masculino/153-169-223-220267",
+      "imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTit5HuXLaWyegzHEBkg5bAC_aXigO08yhv-M2TRHHeBTbQ5S8QdxAY4ELN8gN5cUlfYOFxiZAYrHnL6HUDoiAh6o4cpoAFXIByvNeEkqMToBXuqFS45zAIPA&usqp=CAE",
+      "price": "519,99",
+      "id": 4
+    },
+    {
+      "title": "Console Microsoft Xbox Series S, 512GB, Branco",
+      "url": "https://www.kabum.com.br/produto/128561/console-microsoft-xbox-series-s-512gb-branco-rrs-00006?gclid=CjwKCAiAtK79BRAIEiwA4OskBgxPtwy3gUCXkPNUNtVTd3B35EWTEFMdRhYJivy14MIqjjXpmF3nKBoCJo0QAvD_BwE",
+      "imageUrl": "https://images-americanas.b2w.io/produtos/01/00/img/2117190/5/2117190565_1GG.jpg",
+      "price": "2.659,90",
+      "id": 5
+    },
+    {
+      "title": "Fone QCY T1C Preto Stereo Bluetooth 5.0",
+      "url": "https://www.amazon.com.br/Fone-Bluetooth-5-0-Qcy-T1C/dp/B07KGC798L/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2AUXOLP1XDRFD&dchild=1&keywords=redmi+airdots+s&qid=1605104019&sprefix=redmi+air%2Caps%2C856&sr=8-4",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41aI8x0eVfL._AC_.jpg",
+      "price": "67,00",
+      "id": 6
     }
   ],
   "comments": [
@@ -44,9 +65,28 @@
     {
       "userId": 1,
       "promotionId": 3,
-      "comment": "Espera a Black Friday que vai cair para 3000",
+      "comment": "Espera a Black Friday que vai cair para 2900",
       "parentId": 2,
       "id": 4
+    },
+    {
+      "userId": 2,
+      "promotionId": 6,
+      "comment": "Um ótimo concorrente do Redmi AirDots S, recomendo comprar esse no momento por conta do preço mais baixo.",
+      "id": 5
+    },
+    {
+      "userId": 3,
+      "promotionId": 6,
+      "comment": "Exatamente, hoje o AirDots S está quase 100 reais a mais!",
+      "parentId": 5,
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "promotionId": 5,
+      "comment": "Parabéns Microsoft pelo ótimo custo benefício!",
+      "id": 7
     }
   ],
   "users": [
@@ -57,8 +97,8 @@
     },
     {
       "id": 2,
-      "name": "Phillip Jacobs",
-      "avatarUrl": "https://randomuser.me/api/portraits/men/64.jpg"
+      "name": "Marlon Victor",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/62356988?s=460&u=6b112c8f2e619f70b49f55b675cceb9031d180b7&v=4"
     },
     {
       "id": 3,

@@ -59,4 +59,7 @@ export const Form = styled.form`
     hr {
         margin-bottom: 0;
     }
+    @media(max-height: 565px) {
+        max-height: 400px;
+    }
 `
