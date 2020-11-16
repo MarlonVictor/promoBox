@@ -67,4 +67,11 @@ export default createGlobalStyle`
         padding: 15px;
         margin: 0;
     }
+    span.error {
+        color: #dd5a6a;
+        font-size: 13px;
+        text-align: end;
+        transform: translateX(-10px) translateY(3px);
+        margin-bottom: -15px;
+    }
 `
