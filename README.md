@@ -3,16 +3,17 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/netlify/3729a1e9-ab75-49e3-bc75-72898d44c9bb?color=999&logo=Netlify&style=flat-square">
   <img src="https://img.shields.io/github/repo-size/MarlonVictor/promoBox?color=999&logo=GitHub&style=flat-square">
   <img src="https://img.shields.io/github/stars/MarlonVictor/promoBox?color=999&logo=github&style=flat-square">
   <img src="https://img.shields.io/github/license/MarlonVictor/promoBox?color=999&style=flat-square">
 </p>
 
 ## Sobre
-PromoBox é uma SPA com o objetivo de ajudar as pessoas a encontar promoções de diversos sites em só um, nele o usuário pode tanto criar, modificar e remover promoções 
-quanto ver e fazer comentarios nas promoções já cadastradas por outro usuário.  
+PromoBox é uma SPA com o objetivo de ajudar as pessoas a encontrar promoções de diversos sites em só um, nele o usuário pode tanto criar, modificar e remover promoções 
+quanto ver e fazer comentários nas promoções já cadastradas por outro usuário.  
   
-Projeto feito afins de estudos, aprimorando meu conhecimento em ReactJs, Styled-Components e na nova versão do BootStrap.
+Projeto feito afins de estudos, aprimorando meu conhecimento em ReactJs, Styled-Components e na nova versão do Bootstrap.
 
 ## Tecnologias Utilizadas
 * Bootstrap
@@ -21,8 +22,6 @@ Projeto feito afins de estudos, aprimorando meu conhecimento em ReactJs, Styled-
 * Styled-Components
 * Formik
 * Yup
-* JSON-Server
-* NodeJs
 
 ## Resultado
 <p align="center">
@@ -34,6 +33,10 @@ Projeto feito afins de estudos, aprimorando meu conhecimento em ReactJs, Styled-
   <img src="https://user-images.githubusercontent.com/62356988/99726670-8aacb480-2a95-11eb-8d44-be8fd07dcc0a.gif" width="880px">
 </p>
 
+## Acesse
+* Link do projeto: [PromoBox](https://promobox.netlify.app/)
+* Link da API: [PromoBox-API](https://github.com/MarlonVictor/promoBox-api)
+
 ## Como Rodar
 
 ### Clone o repositório
@@ -41,23 +44,10 @@ Projeto feito afins de estudos, aprimorando meu conhecimento em ReactJs, Styled-
 $ git clone https://github.com/MarlonVictor/promoBox.git
 ```
 
-### Executar API
-```bash
-# Vá para a pasta do servidor 
-$ cd promoBox/server
-
-# Instalar Dependências
-$ yarn install
-
-# Executar Aplicação 
-$ yarn start
-```
-* Acesse a API em [http://localhost:5000/](http://localhost:5000/)
-
-### Executar projeto da Web
+### Executar a aplicação
 ```bash
 # Vá para a pasta da web 
-$ cd promoBox/web
+$ cd promoBox
 
 # Instalar Dependências
 $ yarn install
